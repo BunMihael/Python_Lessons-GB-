@@ -1,0 +1,124 @@
+# типы данны= и переменных.
+# int, float, boolean, str, list, non 
+
+# value = None
+# a = 123
+# b = 1.23
+# print(type(a))
+# print(type(b))
+# print(type(value))
+# s = "Hello World"
+# print(s)
+
+# print(a, ' - ',b, ' - ', s)
+# print('{1} - {2} - {0}'.format(a,b,s))
+# print(f'{a} - {b} - {s}') # интерполяция
+
+# f= False
+# print(f)
+
+# list = [1,2,3, "4", "Hello", True]
+# print(list)
+
+# Ввод и вывод
+# print, input
+
+# print('Введите а')
+# a = int(input())
+# print('Введите b')
+# b = int(input())
+
+# print(a, ' + ', b, ' = ', a+b)
+# print(f'{a}, {b}')
+# print('{} {}'.format(a,b))
+
+# Арифметические операции
+# +, -,*, /, %, //,**
+# Приоритет операций
+# **, ⊕, ⊖,*, /, //, %, +, - 
+# унарный плюс
+# ( ) Скобки меняют приоритет
+
+# Логические операции
+# >, >=, <, <=, ==, !=
+# not, and, or – не путать с &, |,
+# ^
+# Кое-что ещё: is, is not, in, not in
+
+# Управляющие
+# конструкции:
+# if, if-else
+
+# username = input('Введите имя: ')
+# if username == 'Маша':
+#  print('Ура, это же МАША!')
+# elif username == 'Марина':
+#  print('Я так ждала Вас, Марина!')
+# elif username == 'Ильнар':
+#  print('Ильнар - топ)')
+# else:
+#  print('Привет, ', username)
+
+# original = 23
+# inverted = 0
+# while original != 0:
+#  inverted = inverted * 10 + (original % 10)
+#  original //= 10
+# else:
+#  print('Пожалуй')
+#  print('хватит )')
+# print(inverted)
+
+# line = ""
+# for i in range(5):
+#     line = ""
+#     for j in range(5):
+#         line += "*"
+# print(line)
+
+# text = 'съешь ещё этих мягких французских булок'
+# print(len(text)) # 39
+# print('ещё' in text) # True
+# print(text.isdigit()) # False
+# print(text.islower()) # True
+# print(text.replace('ещё','ЕЩЁ')) #
+# for c in text:
+#  print(c)
+
+# text = 'съешь ещё этих мягких французских булок'
+# print(text[0]) # c
+# print(text[1]) # ъ
+# print(text[len(text)-1]) # к
+# print(text[-5]) # б
+# print(text[:]) # print(text)
+# print(text[:2]) # съ
+# print(text[len(text)-2:]) # ок
+# print(text[2:9]) # ешь ещё
+# print(text[6:-18]) # ещё этих мягких
+# print(text[0:len(text):6]) # сеикакл
+# print(text[::6]) # сеикакл
+# text = text[2:9] + text[-5] + text[:2] # ...
+
+# Списки: введение
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers) # [1, 2, 3, 4, 5]
+# numbers = list(range(1, 6))
+# print(numbers) # [1, 2, 3, 4, 5]
+# numbers[0] = 10
+# print(numbers) # [10, 2, 3, 4, 5]
+# for i in numbers:
+#  i *= 2
+#  print(i) # [20, 4, 6, 8, 10]
+# print(numbers) # [10, 2, 3, 4, 5]
+
+# Списки: введение
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers) # [1, 2, 3, 4, 5]
+# numbers = list(range(1, 6))
+# print(numbers) # [1, 2, 3, 4, 5]
+# numbers[0] = 10
+# print(numbers) # [10, 2, 3, 4, 5]
+# for i in numbers:
+#  i *= 2
+#  print(i) # [20, 4, 6, 8, 10]
+# print(numbers) # [10, 2, 3, 4, 5]
