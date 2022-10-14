@@ -18,3 +18,12 @@ print(spam)
 # number = int(input('Write a number: '))
 # x = list_of_numbers(number)
 # print(x)
+
+# n = int(input("Введите размер списка: "))
+# a = -n
+
+# while a < n:
+#     print(a, end = ", ")
+#     a += 1
+
+# print(n)

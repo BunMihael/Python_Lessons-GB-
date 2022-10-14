@@ -42,3 +42,7 @@ l = int(input(' Write number of elements: '))
 new_array = array(l)
 maxim = max_el(new_array)
 print(f'Max element is: {maxim}')
+
+# for el in my_list:
+#     if el > max:
+#         max = el

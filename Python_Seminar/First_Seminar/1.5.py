@@ -2,7 +2,7 @@
 
 num = int(input('Write a number: '))
 
-if (num % 5 == 0 and num % 10 == 0 or num % 15 == 0) and num % 30 != 0:
+if (num % 5 == 0 and num % 10 == 0) or (num % 15 == 0) and not num % 30 == 0:
     print(' Yes.')
 else:
     print(' No. ')
