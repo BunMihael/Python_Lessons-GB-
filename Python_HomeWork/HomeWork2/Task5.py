@@ -1,5 +1,7 @@
-# Реализуйте алгоритм перемешивания списка.
-from random import randint
+# 5. Реализуйте алгоритм перемешивания элементов списка. Без функции shuffle
+#  из модуля random, другие методы использовать можно.
+
+from random import randint, sample
 
 
 def generator(some_num):
@@ -11,13 +13,16 @@ def generator(some_num):
 
 
 def mix(set_of_num, length):
-    for i in range(length-1):
-        set_of_num[i], set_of_num[length - 1 - i] = set_of_num[length - 1 - i], set_of_num[i]
-    return set_of_num
+    result = sample(set_of_num, length)
+    print(result)
+    
+    # for i in range(length-1):
+    #     set_of_num[i], set_of_num[length - 1 - i] = set_of_num[length - 1 - i], set_of_num[i]
+    # return set_of_num
 
 
 length = int(input('Please, write a length of numbers you want: '))
 list = generator(length)
 print(list)
-some = mix(list, length)
-print(some)
+mix(list, length)
+

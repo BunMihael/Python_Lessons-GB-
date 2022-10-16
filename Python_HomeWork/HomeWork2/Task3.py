@@ -6,7 +6,7 @@ sequence = []
 suma = 0
 
 for i in range(1, lenght + 1):
-    number = round((1+(1/i))**i)
+    number = round((1+(1/i))**i, 2)
     sequence.append(number)
     suma += number
     

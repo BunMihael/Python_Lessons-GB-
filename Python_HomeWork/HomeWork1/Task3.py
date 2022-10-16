@@ -9,7 +9,7 @@
 # - x=-34; y=-30 -> 3
 
 
-def Quarters(x, y):
+def quarters(x, y):
     if x == 0 and y == 0:
         print('x and y should not be equal zero.')
     elif x > 0 and y >0:
@@ -25,4 +25,4 @@ print('Please, enter сoordinates x, y and we will tell you the number of the qu
 x = int(input(' Write a number for x: '))
 y = int(input(' Write a number for y: '))
 
-Quarters(x, y)
+quarters(x, y)
