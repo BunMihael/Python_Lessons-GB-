@@ -10,3 +10,4 @@ def sequence(n):
     return nums
 
 print(sequence(6))
+

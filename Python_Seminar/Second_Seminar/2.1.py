@@ -6,7 +6,7 @@
 def sequence(N):
     array = []
     # numbers = 1
-    for i in range(N+1):
+    for i in range(1, N+1):
         array.append((-3) ** i)
         # numbers *= -3
     return array
