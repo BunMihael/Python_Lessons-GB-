@@ -5,7 +5,7 @@
 # - 2 -> 10
 
 result = ""
-your_num = int(input("Введите число для преобразовывания десятичного числа в двоичное:\n"))
+your_num = int(input("Please, enter a number to convert decimal to binary:\n"))
 while your_num != 0:
     result += str(your_num%2)
     your_num //=2
