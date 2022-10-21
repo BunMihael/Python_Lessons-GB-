@@ -20,7 +20,7 @@ def pairsOfNums(nums, amount):
     return x
 
 
-num_of_numbers = int(input('Please, write how many numbers do you want to write:'))
+num_of_numbers = int(input('Please, write how many numbers do you want to generate:'))
 result = generator(num_of_numbers)
 print(result)
 print(pairsOfNums(result, num_of_numbers))
