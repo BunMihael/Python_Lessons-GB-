@@ -9,6 +9,6 @@
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 
-your_list = list(map(float, input("Введите числа через пробел:\n").split()))
+your_list = list(map(float, input("Please, enter the numbers separated by the space:\n").split()))
 new_lst = [round(i%1,2) for i in your_list if i%1 != 0]
 print(max(new_lst) - min(new_lst))
