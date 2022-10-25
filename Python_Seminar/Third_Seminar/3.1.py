@@ -13,6 +13,9 @@
 # print(find_num(lst,some_num))
 
     
+
+
+
 lst = ['gs;sdw34','dvj030761fs','jspf 8392js','hdspa354']
 
 def find_num(lst, some_num):
@@ -32,3 +35,14 @@ print(find_num(lst,some_num))
 # else:
 #     print("Not found!!!")
 
+# count = 0
+# find_str = 'dvj'
+# for i in range(len(lst)):
+#     if find_str == lst[i]:
+#         count += 1
+#         break
+    
+# if count == 2:
+#     print(i)
+# if count <= 1:
+#     print(-1)
