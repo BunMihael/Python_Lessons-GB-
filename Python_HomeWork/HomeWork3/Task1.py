@@ -23,3 +23,14 @@ sum_odd_positions(your_list)
 
 # for el in range(1, len(my_list), 2):
 #     sum_digit += my_list[el]
+
+# users_nums = [
+#     45, # 0
+#     67, # 1
+#     43, # 2
+#     78, # 3
+#     3,  # 4
+#     5,  # 5
+# ]
+
+# print(f'Sum => {sum(users_nums[1::2])}')
