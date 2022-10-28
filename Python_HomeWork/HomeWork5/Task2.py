@@ -1,8 +1,8 @@
-# Игра с конфетами. Дано N конфет.
+# Игра с кончетами. Дано N конфет.
 # Каждый игрок за каждый ход может взять не более M конфет.
 # Побеждает игрок,забравший последнюю конфету.
 
-# man vs bot
+# man vs smart bot
 
 from random import randint, choice
 
@@ -36,6 +36,7 @@ def get_rules(players):
 
 def play_game(rules, players, messages):
     count = rules[2]
+    print(count)
     if rules[0] % 10 == 1 and 9 > rules[0] > 10:
         letter = 'а'
     elif 1 < rules[0] % 10 < 5 and 9 > rules[0] > 10:
@@ -44,7 +45,7 @@ def play_game(rules, players, messages):
         letter = ''
     while rules[0] > 0:
         if not count % 2:
-            move = randint(1, rules[1])
+            move = rules[0] % rules[1] + 1
             print(f'Я забираю {move}')
         else:
             print(f'{players[0]}, {choice(messages)}')
@@ -67,7 +68,7 @@ def play_game(rules, players, messages):
         else:
             print('Все конфеты разобраны.')
         count += 1
-    return players[count % 2]
+    return players[not count % 2]
 
 
 print(greeting)
