@@ -52,10 +52,10 @@ def parse_equation(equation: str):
 equation1 = create_a_polynomial(coefficients_of_polynomial())
 equation2 = create_a_polynomial(coefficients_of_polynomial())
 
-with open("equation1", "w") as file:
+with open("equation1.txt", "w") as file:
     file.write(equation1)
 
-with open("equation2", "w") as file:
+with open("equation2.txt", "w") as file:
     file.write(equation2)
 
 
@@ -92,9 +92,9 @@ def print_equation(equation: str):
 print_equation(create_a_polynomial(parEq1))
 print_equation(create_a_polynomial(parEq2))
 
-with open("Finish", "w") as file:
+with open("Finish.txt", "w") as file:
     file.write(create_a_polynomial(result_equation()))
-    
+
 print_equation(create_a_polynomial(result_equation()))
 
 
