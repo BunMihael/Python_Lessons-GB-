@@ -19,18 +19,28 @@ def coding(txt):
         res = res + str(count) + txt[-1]
     return res
 
+
 def decoding(txt):
-    number = ''
     res = ''
-    for i in range(len(txt)):
-        if not txt[i].isalpha():
-            number += txt[i]
-        else:
-            res = res + txt[i] * int(number)
-            number = ''
+    for i in range(1, len(txt), 2):
+        res += txt[i]*int(txt[i-1])
     return res
 
 
+
+# def decoding(txt):
+#     number = ''
+#     res = ''
+#     for i in range(len(txt)):
+#         if not txt[i].isalpha():
+#             number += txt[i]
+#         else:
+#             res = res + txt[i] * int(number)
+#             number = ''
+#     return res
+
+
 s = 'ABCABCABCDDDFFFFFF'
+print(f"Befor: {s}")
 print(f"Text after encoding: {coding(s)}")
 print(f"Text after decoding: {decoding(coding(s))}")
