@@ -1,42 +1,36 @@
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
-# Входные и выходные данные хранятся в отдельных текстовых файлах.
+# Создать функцию сжатия строки и функцию восстановления строки.
+# Пример:
+# ABCABCABCDDDFFFFFF ->1A1B1C1A1B1C1A1B1C3D6F -> ABCABCABCDDDFFFFFF
+# WWJJJHDDDDDPPGRRR -> 2W3J1H5D2P1G3R -> WWJJJHDDDDDPPGRRR
 
-# Пример: aaaaaaabbbbbbccccccccc => 7a6b9c и 11a3b7c => aaaaaaaaaaabbbccccccc
 
-with open('42_RLE1_decoded.txt', 'r') as data:
-    my_text = data.read()
 
-def encode_rle(ss):
-    str_code = ''
-    prev_char = ''
+def coding(txt):
     count = 1
-    for char in ss:
-        if char != prev_char:
-            if prev_char:
-                str_code += str(count) + prev_char
-            count = 1
-            prev_char = char
-        else:
+    res = ''
+    for i in range(len(txt)-1):
+        if txt[i] == txt[i+1]:
             count += 1
-    return str_code
-
-            
-str_code = encode_rle(my_text)
-print(str_code)
-
-with open('42_RLE2_encoded.txt', 'r') as data:
-    my_text2 = data.read()
-
-def decoding_rle(ss:str):
-    count = ''
-    str_decode = ''
-    for char in ss:
-        if char.isdigit():
-            count += char 
         else:
-            str_decode += char * int(count)
-            count = ''
-    return str_decode
+            res = res + str(count) + txt[i]
+            count = 1
+    if count > 1 or (txt[len(txt)-2] != txt[-1]):
+        res = res + str(count) + txt[-1]
+    return res
 
-str_decode = decoding_rle(my_text2)
-print(str_decode)
+def decoding(txt):
+    number = ''
+    res = ''
+    for i in range(len(txt)):
+        if not txt[i].isalpha():
+            number += txt[i]
+        else:
+            res = res + txt[i] * int(number)
+            number = ''
+    return res
+
+
+s = 'ABCABCABCDDDFFFFFF'
+print(f"Text after encoding: {coding(s)}")
+print(f"Text after decoding: {decoding(coding(s))}")
