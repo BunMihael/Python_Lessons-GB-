@@ -11,3 +11,9 @@ def more_than_last_element(src):
     return lst
 
 print(more_than_last_element(src))
+
+# input_data = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+
+# print(
+#     [value for key, value in enumerate(input_data[1:], start=1) if value > input_data[key - 1]]
+# )
