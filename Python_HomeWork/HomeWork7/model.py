@@ -18,3 +18,5 @@ def stringToList(string: str):
         .replace('/', ' / ').replace('(', ' ( ').replace(')', ' ) ')
     list = string.split()
     return list
+
+
