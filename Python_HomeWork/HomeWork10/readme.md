@@ -1,0 +1,24 @@
+Практическое задание 11. «Jupyter Notebook и несколько слов об аналитике»
+1. Работаем с Jupyter Notebook в любом варианте
+- в браузерной версии локально
+- Google colab: https://colab.research.google.com
+- VSCode через plugin
+
+Используем открытые датасеты:
+- https://data.gov.ru/opendata
+- https://catalog.data.gov/dataset
+
+Лучше CSV формат, но можно и json/xml
+Используем пакеты pandas + matplotlib для анализа :)))  и визуализации данных
+
+Необходимо попробовать:    
+- Фильтрацию данных
+- Построение графика по числовым значениям + по отфильтрованным значениям
+- Применить при отображении данных не менее двух вариантов графического представления данных
+- Дополнительно: поработать с преобразованием даты и группировкой/суммой
+Результат работы - файл *.ipynb
+
+Полезные ссылки:
+https://matplotlib.org/stable/gallery/index.html
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html?highlight=pyplot",
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axes.html#matplotlib.pyplot.axes",
